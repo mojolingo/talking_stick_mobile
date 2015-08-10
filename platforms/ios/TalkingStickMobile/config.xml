@@ -16,6 +16,7 @@
     </feature>
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
+    <hook src="hooks/iosrtc-swift-support.js" type="after_platform_add" />
     <name>TalkingStickMobile</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -31,4 +32,8 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <feature name="iosrtcPlugin">
+        <param name="ios-package" value="iosrtcPlugin" />
+        <param name="onload" value="true" />
+    </feature>
 </widget>
